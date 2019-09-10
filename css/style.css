@@ -63,9 +63,10 @@ body{
 .right-content p {
     color: rgb(209, 204, 204);
 }
+
 /* This is a buton on the page */
 button {
-    width: 40%;
+    min-width: 40%;
     padding: 10px;
     border-radius: 50px;
     font-weight: bold;
@@ -104,9 +105,66 @@ footer {
     border-radius: 50%;
 }
 
+/* MOBILE VIEW OF THE LANDING PAGE */
 @media only screen and (max-width: 375px) {
     /* For mobile phones: */
-    .left-content, .right-content, footer{
+    body{
+
+        background:hsl(257, 40%, 49%) url("../images/bg-mobile.svg");
+    
+    }
+
+    .logo {
+        margin-bottom: 50px;
+        
+    }
+
+    .logo img {
+        width: 100px;
+    }
+      
+    
+    .left-image-wrapper{
+        width: 100%;
+    }
+
+    .container {
+        display: block;
+    }
+
+    .left-content, .right-content, footer{ 
+        padding: 0;
       width: 100%;
     }
+
+    .left-content{
+        margin-bottom: 50px;
+    }
+
+    .right-content {
+        padding: 0;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .right-content h1 {
+        width: 90%;
+        font-size: 1.5rem
+    }
+
+    button {
+        min-width: 70%;    
+    }
+
+    footer {
+        justify-content: center;
+        padding-right: none;
+        padding-bottom: 40px
+    }
+
+    footer .social {
+        display: flex;
+        justify-content: center
+    }
+
   }
