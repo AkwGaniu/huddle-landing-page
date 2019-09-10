@@ -63,7 +63,7 @@ body{
 .right-content p {
     color: rgb(209, 204, 204);
 }
-
+/* This is a buton on the page */
 button {
     width: 40%;
     padding: 10px;
